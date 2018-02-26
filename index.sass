@@ -1,0 +1,72 @@
+//fonts
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Muli|Nunito|Open+Sans");
+//variables
+
+$main-color: cornflowerblue
+
+*
+  padding: 0px
+  margin: 0px
+  box-sizing: border-box
+//genral style
+body
+    background: linear-gradient(to right, rgb(42, 18, 140) , rgb(61, 103, 165))
+    font-family: 'Open Sans'
+
+.flex
+    display: flex
+    align-items: center
+.input
+    padding: 10px
+    background-color: $main-color
+
+i
+    cursor: pointer
+
+// id style
+#app
+    width: 30%
+    margin: 50px auto
+    background-color: white
+    
+
+
+header
+    padding: 10px
+    color: white
+    background-color: $main-color
+    & h3
+        flex: 15
+    & i
+        flex: 1
+        
+
+input
+    width: 100%
+    padding: 10px
+    border: 1px solid $main-color
+    border-radius: 5px
+#tasks
+    list-style: none
+    & li
+        padding: 5px
+        & i
+            display: none
+            color: rgb(224, 71, 71)
+        &:hover i
+                display: inline-block
+        
+            
+    & li:nth-child(even)
+        background-color: rgb(190,210,190)	
+        
+//media quaries
+
+@media screen and(max-width:800px)and (min-width:500px)
+    #app
+        width: 70%
+@media screen and(max-width:501px)
+    #app
+        width: 100%
+        margin: 0px    
+            
